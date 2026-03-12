@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Akademik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <h1 class="text-xl font-bold flex items-center gap-2">
+        📊 Dashboard Akademik
+        <span class="text-sm font-normal text-slate-500">
+          (Simulasi Data JSON)
+        </span>
+      </h1>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-7xl mx-auto px-6 py-6">
+
+    <!-- CARD STATS -->
+    <section 
+      id="stats"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 opacity-60"
+    >
+
+      <!-- CARD -->
+      <div class="bg-white rounded-xl p-5 shadow hover:shadow-md transition">
+        <p class="text-sm text-slate-500">Total Guru</p>
+        <p class="text-3xl font-bold text-blue-600 mt-2" id="teachers">–</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow hover:shadow-md transition">
+        <p class="text-sm text-slate-500">Total Siswa</p>
+        <p class="text-3xl font-bold text-emerald-600 mt-2" id="students">–</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow hover:shadow-md transition">
+        <p class="text-sm text-slate-500">Total Kelas</p>
+        <p class="text-3xl font-bold text-purple-600 mt-2" id="classes">–</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow hover:shadow-md transition">
+        <p class="text-sm text-slate-500">Total Mata Pelajaran</p>
+        <p class="text-3xl font-bold text-orange-600 mt-2" id="lessons">–</p>
+      </div>
+
+      <div class="bg-white rounded-xl p-5 shadow hover:shadow-md transition">
+        <p class="text-sm text-slate-500">Total Jadwal</p>
+        <p class="text-3xl font-bold text-rose-600 mt-2" id="schedules">–</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- SCRIPT -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
